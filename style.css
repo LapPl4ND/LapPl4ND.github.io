@@ -1,7 +1,93 @@
-body {
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/Background.gif') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'BlankRiver';
+    src: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/font/Blank%20River.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#bg-video 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#mute-button 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#mute-button:hover 
+{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.pp {
+    width: 120px;
+    height: 120px;
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/pp.jpg');
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 20;
+
+    border-radius: 50%; 
+    border: 3px solid #ff99cc; 
+    
+    box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.7);
+}
+
+
+
+.rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    width: 700px; 
+    height: 400px;
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+
+    border: 3px solid #ff99cc; 
+    box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(114, 204, 253, 0.7); 
+}
+
+
+.pseudo {
+    font-family: 'BlankRiver', sans-serif; 
+    letter-spacing: .05em;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+   
+    color: #ffffff; 
+    filter: drop-shadow(#ffffff 0px 0px 0.5rem);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    animation: flicker 1.5s infinite alternate;
 }
