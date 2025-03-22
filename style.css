@@ -16,11 +16,20 @@
     z-index: -1;
 }
 
-#mute-button 
-{
+/* ========================= */
+/*         Parti Son         */
+/* ========================= */
+
+#mute-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mute-button {
     padding: 10px 15px;
     font-size: 16px;
     background: rgba(0, 0, 0, 0.5);
@@ -31,10 +40,84 @@
     transition: 0.3s;
 }
 
-#mute-button:hover 
-{
-    background: rgba(0, 0, 0, 0.8);
+    #mute-button:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+#volume-slider {
+    position: absolute;
+    bottom: 100px;
+    left: 45%;
+    transform: translateX(-50%) rotate(-90deg);
+    width: 100px;
+    height: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    appearance: none;
+    background: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    --progress: 50%; 
 }
+
+
+    #volume-slider::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8px;
+        background: linear-gradient(to right, #ff99cc 0%, #ff99cc var(--progress), rgba(255, 255, 255, 0.3) var(--progress), rgba(255, 255, 255, 0.3) 100%);
+        border-radius: 10px;
+    }
+
+    
+    #volume-slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 14px;
+        height: 14px;
+        background: #ff99cc;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid white;
+        margin-top: -3px; 
+    }
+
+   
+    #volume-slider::-moz-range-thumb {
+        width: 14px;
+        height: 14px;
+        background: #ff99cc; 
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid white; 
+    }
+
+    
+    #volume-slider::-moz-range-track {
+        background: rgba(255, 255, 255, 0.3);
+        height: 8px;
+        border-radius: 10px;
+    }
+
+   
+    #volume-slider::-moz-range-progress {
+        background: #ff99cc;
+        height: 8px;
+        border-radius: 10px;
+    }
+
+    
+    #mute-container:hover #volume-slider,
+    #volume-slider:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #mute-container:not(:hover) #volume-slider {
+        transition-delay: 0.2s;
+        opacity: 0;
+        visibility: hidden;
+    }
 
 .pp {
     width: 120px;
