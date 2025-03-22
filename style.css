@@ -124,7 +124,7 @@
 .pp {
     width: 120px;
     height: 120px;
-    background: url('img/pp.jpg');
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/pp.jpg');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -347,7 +347,7 @@
     border-radius: 20px;
     border: 2px solid #ff99cc; 
 
-    background: url('img/discord.png'); 
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/Discord.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -373,7 +373,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('img/YT.png'); 
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/YT.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -398,7 +398,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('img/X.png'); 
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/X.png'); 
     background-size: 70%; 
     background-repeat: no-repeat;
     background-position: center;
@@ -423,7 +423,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('img/GH.png'); 
+    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/GH.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center;
