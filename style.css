@@ -436,3 +436,286 @@
     transform: translateX(-50%) scale(1.1); 
     box-shadow: 0 0 10px #ff99cc, 0 0 20px rgba(255, 153, 204, 0.8);
 }
+
+
+/* ========================= */
+/*      Mobile version       */
+/* ========================= */
+
+@media screen and (max-width: 600px) {
+
+    /* ✅ Ajuste les tailles du menu */
+    .rectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 500px;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 3px solid #ff99cc;
+        box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(114, 204, 253, 0.7);
+    }
+
+    /* ========================= */
+    /*      Boutons Sites        */
+    /* ========================= */
+
+    .Projet1 {
+        display: inline-block;
+        width: 200px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        text-decoration: none;
+        color: #ff99cc;
+        font-weight: bold;
+        font-size: 2px;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 15px;
+        background: transparent;
+        border: 2px solid #ff99cc;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+
+        .Projet1:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.9);
+        }
+
+
+
+    .Projet2 {
+        display: inline-block;
+        width: 200px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        text-decoration: none;
+        color: #ff99cc;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        top: 30%;
+        left: 75%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 15px;
+        background: transparent;
+        border: 2px solid #ff99cc;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+
+        .Projet2:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.9);
+        }
+
+
+    /* ========================= */
+    /*      Boutons Logiciels    */
+    /* ========================= */
+
+    .CE {
+        display: inline-block;
+        width: 120px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        text-decoration: none;
+        color: #ff99cc;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 15px;
+        border: 2px solid #ff99cc;
+        background: transparent;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+
+        .CE:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.9);
+        }
+
+    .DLL {
+        display: inline-block;
+        width: 120px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        text-decoration: none;
+        color: #ff99cc;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 15px;
+        background: transparent;
+        border: 2px solid #ff99cc;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+
+        .DLL:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.9);
+        }
+
+    .Aim {
+        display: inline-block;
+        width: 120px;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        text-decoration: none;
+        color: #ff99cc;
+        font-weight: bold;
+        font-size: 18px;
+        position: absolute;
+        top: 55%;
+        left: 80%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 15px;
+        background: transparent;
+        border: 2px solid #ff99cc;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+
+        .Aim:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(255, 153, 204, 0.9);
+        }
+
+    .menu-text {
+        display: none; /* 🔥 Masque "Menu" sur mobile */
+    }
+
+    .color-text {
+        display: none; /* 🔥 Masque "Color" sur mobile */
+    }
+
+    /* ========================= */
+    /*      Boutons réseaux      */
+    /* ========================= */
+
+    .Discord {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 75%;
+        left: 18%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 20px;
+        border: 2px solid #ff99cc;
+        background: url('img/discord.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        filter: drop-shadow(0 0 5px #ff99cc);
+        transition: 0.3s ease-in-out;
+    }
+
+        .Discord:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 10px #ff99cc, 0 0 20px rgba(255, 153, 204, 0.8);
+        }
+
+
+    .YT {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 20px;
+        border: 2px solid #ff99cc;
+        background: url('img/YT.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        filter: drop-shadow(0 0 5px #ff99cc);
+        transition: 0.3s ease-in-out;
+    }
+
+        .YT:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 10px #ff99cc, 0 0 20px rgba(255, 153, 204, 0.8);
+        }
+
+    .X {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 75%;
+        left: 62%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 20px;
+        border: 2px solid #ff99cc;
+        background: url('img/X.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        filter: drop-shadow(0 0 5px #ff99cc);
+        transition: 0.3s ease-in-out;
+    }
+
+        .X:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 10px #ff99cc, 0 0 20px rgba(255, 153, 204, 0.8);
+        }
+
+    .GH {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        position: absolute;
+        top: 75%;
+        left: 84%;
+        transform: translateX(-50%);
+        z-index: 20;
+        border-radius: 20px;
+        border: 2px solid #ff99cc;
+        background: url('img/GH.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 0 5px #ff99cc, 0 0 10px rgba(255, 153, 204, 0.5);
+        filter: drop-shadow(0 0 5px #ff99cc);
+        transition: 0.3s ease-in-out;
+    }
+
+        .GH:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 0 10px #ff99cc, 0 0 20px rgba(255, 153, 204, 0.8);
+        }
+
+}
