@@ -439,8 +439,10 @@
 
 
 /* ========================= */
-/*      Mobile version       */
+/*      mobile section       */
 /* ========================= */
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -450,7 +452,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 450px;
+        width: 350px;
         height: 500px;
         background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
@@ -459,14 +461,44 @@
         box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(114, 204, 253, 0.7);
     }
 
+    .pseudo {
+        font-family: 'BlankRiver', sans-serif;
+        letter-spacing: .05em;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        filter: drop-shadow(#ffffff 0px 0px 0.5rem);
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: flicker 1.5s infinite alternate;
+    }
+
+    .Titre {
+        font-family: 'BlankRiver', sans-serif;
+        letter-spacing: .05em;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        filter: drop-shadow(#ffffff 0px 0px 0.5rem);
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: flicker 1.5s infinite alternate;
+    }
+
     /* ========================= */
     /*      Boutons Sites        */
     /* ========================= */
 
     .Projet1 {
         display: inline-block;
-        width: 200px;
-        height: 65px;
+        width: 135px;
+        height: 60px;
         line-height: 65px;
         text-align: center;
         text-decoration: none;
@@ -474,8 +506,8 @@
         font-weight: bold;
         font-size: 2px;
         position: absolute;
-        top: 30%;
-        left: 25%;
+        top: 25%;
+        left: 26%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 15px;
@@ -494,8 +526,8 @@
 
     .Projet2 {
         display: inline-block;
-        width: 200px;
-        height: 65px;
+        width: 135px;
+        height: 60px;
         line-height: 65px;
         text-align: center;
         text-decoration: none;
@@ -503,8 +535,8 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        top: 30%;
-        left: 75%;
+        top: 25%;
+        left: 74%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 15px;
@@ -526,8 +558,8 @@
 
     .CE {
         display: inline-block;
-        width: 120px;
-        height: 65px;
+        width: 100px;
+        height: 60px;
         line-height: 65px;
         text-align: center;
         text-decoration: none;
@@ -535,8 +567,8 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        top: 55%;
-        left: 20%;
+        top: 42%;
+        left: 26%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 15px;
@@ -553,8 +585,8 @@
 
     .DLL {
         display: inline-block;
-        width: 120px;
-        height: 65px;
+        width: 100px;
+        height: 60px;
         line-height: 65px;
         text-align: center;
         text-decoration: none;
@@ -562,7 +594,7 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        top: 55%;
+        top: 60%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 20;
@@ -580,8 +612,8 @@
 
     .Aim {
         display: inline-block;
-        width: 120px;
-        height: 65px;
+        width: 100px;
+        height: 60px;
         line-height: 65px;
         text-align: center;
         text-decoration: none;
@@ -589,8 +621,8 @@
         font-weight: bold;
         font-size: 18px;
         position: absolute;
-        top: 55%;
-        left: 80%;
+        top: 42%;
+        left: 74%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 15px;
@@ -619,16 +651,16 @@
 
     .Discord {
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 18%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('img/discord.png');
+        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/Discord.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -645,16 +677,16 @@
 
     .YT {
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 40%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('img/YT.png');
+        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/YT.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -670,16 +702,16 @@
 
     .X {
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 62%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('img/X.png');
+        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/X.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -695,16 +727,16 @@
 
     .GH {
         display: inline-block;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 75%;
+        top: 80%;
         left: 84%;
         transform: translateX(-50%);
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('img/GH.png');
+        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/GH.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
