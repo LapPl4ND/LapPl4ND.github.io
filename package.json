@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "discord.js": "^14.18.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.23.0"
+  },
+  "name": "webgithub",
+  "version": "1.0.0",
+  "main": "presence.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
