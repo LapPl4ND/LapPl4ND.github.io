@@ -32,16 +32,16 @@
 #mute-button {
     padding: 10px 15px;
     font-size: 16px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
+    background: transparent;
+    color: #ff99cc;
+    border: 2px solid #ff99cc; /* ✅ Contour rose */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
     #mute-button:hover {
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(255, 153, 204, 0.1); /* ✅ Légère coloration au survol */
     }
 
 #volume-slider {
@@ -52,14 +52,15 @@
     width: 100px;
     height: 8px;
     opacity: 0;
+    border: 2px solid #ff99cc; /* ✅ Contour rose */
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     appearance: none;
-    background: none;
+    background: transparent;
     border-radius: 10px;
     outline: none;
     cursor: pointer;
-    --progress: 50%; 
+    --progress: 50%;
 }
 
 
@@ -70,7 +71,7 @@
         border-radius: 10px;
     }
 
-    
+
     #volume-slider::-webkit-slider-thumb {
         appearance: none;
         width: 14px;
@@ -79,17 +80,17 @@
         border-radius: 50%;
         cursor: pointer;
         border: 2px solid white;
-        margin-top: -3px; 
+        margin-top: -3px;
     }
 
-   
+
     #volume-slider::-moz-range-thumb {
         width: 14px;
         height: 14px;
-        background: #ff99cc; 
+        background: #ff99cc;
         border-radius: 50%;
         cursor: pointer;
-        border: 2px solid white; 
+        border: 2px solid white;
     }
 
     
@@ -124,7 +125,7 @@
 .pp {
     width: 120px;
     height: 120px;
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/pp.jpg');
+    background: url('img/pp.jpg');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -347,7 +348,7 @@
     border-radius: 20px;
     border: 2px solid #ff99cc; 
 
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/Discord.png'); 
+    background: url('img/discord.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -373,7 +374,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/YT.png'); 
+    background: url('img/YT.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -398,7 +399,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/X.png'); 
+    background: url('img/X.png'); 
     background-size: 70%; 
     background-repeat: no-repeat;
     background-position: center;
@@ -423,7 +424,7 @@
     z-index: 20; 
     border-radius: 20px; 
     border: 2px solid #ff99cc; 
-    background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/GH.png'); 
+    background: url('img/GH.png'); 
     background-size: 70%; 
     background-repeat: no-repeat; 
     background-position: center;
@@ -475,6 +476,7 @@
         transform: translate(-50%, -50%);
         animation: flicker 1.5s infinite alternate;
     }
+
 
     .Titre {
         font-family: 'BlankRiver', sans-serif;
@@ -645,6 +647,9 @@
         display: none; /* 🔥 Masque "Color" sur mobile */
     }
 
+
+    
+
     /* ========================= */
     /*      Boutons réseaux      */
     /* ========================= */
@@ -660,7 +665,7 @@
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/Discord.png');
+        background: url('img/discord.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -686,7 +691,7 @@
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/YT.png');
+        background: url('img/YT.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -711,7 +716,7 @@
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/X.png');
+        background: url('img/X.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -736,7 +741,7 @@
         z-index: 20;
         border-radius: 20px;
         border: 2px solid #ff99cc;
-        background: url('https://raw.githubusercontent.com/LapPl4ND/LapPl4ND.github.io/main/img/GH.png');
+        background: url('img/GH.png');
         background-size: 70%;
         background-repeat: no-repeat;
         background-position: center;
@@ -751,3 +756,510 @@
         }
 
 }
+
+.DashboardPg1 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 5%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .DashboardPg1:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
+
+
+.LoginPg1 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 2%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .LoginPg1:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
+
+
+/* ========================= */
+/*         Page 2            */
+/* ========================= */
+
+.rectangle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1050px;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid #ff99cc;
+    box-shadow: 0 0 15px #ff99cc, 0 0 30px rgba(114, 204, 253, 0.7);
+    overflow: hidden;
+}
+
+.rectangleInt {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 300px;
+    height: 840px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid #ff99cc;
+}
+
+.pp2 {
+    width: 110px;
+    height: 110px;
+    background: url('img/pp.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 4%;
+    left: 14%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 50%;
+    border: 2px solid #ff99cc;
+}
+
+.pseudo2 {
+    letter-spacing: .05em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Bio {
+    letter-spacing: .05em;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.separation {
+    width: 100%; /* Ajuste si tu veux un trait plus court ou plus long */
+    height: 1px; /* Épaisseur de la ligne */
+    background-color: #ff99cc; /* Couleur du trait */
+    margin: 110% 0%; /*Centrage et espace autour */
+}
+
+.Titre1 {
+    letter-spacing: .05em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.Test1 {
+    letter-spacing: .05em;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.Test2 {
+    letter-spacing: .05em;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 52%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.Titre2 {
+    letter-spacing: .05em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.GitHub-button {
+    position: absolute;
+    display: inline-flex;
+    top: 64%;
+    left: 20%;
+    padding: 10px 20px;
+    background: transparent; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Tu peux l’enlever aussi si tu veux */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: none; /* Supprime l’ombre */
+}
+
+    .GitHub-button i {
+        font-size: 18px;
+    }
+
+    .GitHub-button:hover {
+        transform: scale(1.05);
+        color: #ff99cc; /* Ajoute une petite touche de couleur au hover */
+    }
+
+
+.Youtube-button {
+    position: absolute;
+    display: inline-flex;
+    top: 70%;
+    left: 20%;
+    padding: 10px 20px;
+    background: transparent; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Tu peux l’enlever aussi si tu veux */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: none; /* Supprime l’ombre */
+}
+
+    .Youtube-button i {
+        font-size: 18px;
+    }
+
+    .Youtube-button:hover {
+        transform: scale(1.05);
+        color: #ff99cc; /* Ajoute une petite touche de couleur au hover */
+    }
+
+.UC-button {
+    position: absolute;
+    display: inline-flex;
+    top: 76%;
+    left: 20%;
+    padding: 10px 20px;
+    background: transparent; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    border-radius: 8px; /* Tu peux l’enlever aussi si tu veux */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    box-shadow: none; /* Supprime l’ombre */
+}
+
+    .UC-button i {
+        font-size: 18px;
+    }
+
+    .UC-button:hover {
+        transform: scale(1.05);
+        color: #ff99cc; /* Ajoute une petite touche de couleur au hover */
+    }
+
+.rectangleInt2 {
+    position: absolute;
+    top: 6%;
+    left: 32%;
+    width: 676px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid #ff99cc;
+}
+
+
+.Skill {
+    letter-spacing: .05em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.separation2 {
+    width: 90%; /* Ajuste si tu veux un trait plus court ou plus long */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: #ff99cc; /* Couleur du trait */
+    margin: 12% 5%; /*Centrage et espace autour */
+    border-radius: 20px;
+}
+
+.skills-container {
+    position: absolute;
+    top: 44%;
+    left: 6%;
+    width: 600px; /* Largeur totale pour contenir les barres */
+    height: auto; /* Limite la hauteur pour éviter qu'elles aillent trop bas */
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si trop de barres */
+    overflow-y: auto; /* Permet de scroller si jamais il y a trop de barres */
+}
+
+.skill-bar {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ff99cc;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 20px;
+    width: 100px; /* Réduis cette valeur pour rendre la barre plus courte */
+    position: relative;
+}
+
+.skill-title {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 12px; /* Texte plus petit */
+}
+
+.skill-level {
+    height: 100%;
+
+    background: linear-gradient(90deg, #ff99cc, #ff66b2);
+    box-shadow: 0 0 5px #ff66b2;
+    transition: width 0.5s;
+}
+
+
+.rectangleInt3 {
+    position: relative;
+    top: 48%;
+    left: 0%;
+    width: 676px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid #ff99cc;
+}
+
+.Information {
+    letter-spacing: .05em;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff99cc;
+    position: absolute;
+    top: 8%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Bouton stylisé */
+
+
+
+.MainPg2 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 2%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .MainPg2:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
+
+
+.LoginPg2 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 5%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .LoginPg2:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
+
+
+
+
+/* ========================= */
+/*          page 3           */
+/* ========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Fond noir */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1; /* Derrière tout le reste */
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #ff99cc;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(255, 153, 204, 0.5);
+}
+
+    .login-container h1 {
+        color: #ff99cc;
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .login-container input {
+        margin: 15px 0;
+        padding: 10px;
+        border: 1px solid #ff99cc;
+        border-radius: 5px;
+        background: #1a1a1a;
+        color: white;
+        width: 80%;
+        transition: border 0.3s;
+    }
+
+        .login-container input:focus {
+            border-color: #ff66b2;
+            outline: none;
+        }
+
+    .login-container button {
+        margin-top: 20px;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ff99cc;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+        .login-container button:hover {
+            background-color: #ff66b2;
+            transform: scale(1.05);
+        }
+
+#error-message {
+    color: #ff66b2;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.DashBoardPg3 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 2%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .DashBoardPg3:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
+
+.MainPg3 {
+    position: absolute; /* Le bouton reste en place même si tu scrolls */
+    bottom: 4%;
+    left: 5%;
+    padding: 8px 8px;
+    font-size: 16px;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    .MainPg3:hover {
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.8), 0 0 10px rgba(255, 153, 204, 0.7);
+        transform: scale(1.05);
+    }
