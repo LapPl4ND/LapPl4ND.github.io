@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fonction pour hacher le mot de passe avec SHA-256
     const hashPassword = (password) => {
-        return CryptoJS.SHA256(password).toString();
+        //return CryptoJS.SHA256(password).toString();
+        return password;
     };
 
     loginBtn.addEventListener("click", function (event) {
