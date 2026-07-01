@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("password").value;
 
         // Hachage de ton mot de passe d'origine
-        const correctHashedPassword = "eec0811c314afa57ab4d5b6531c40a2a57ff4f225110bbd1546567a32c7e1de9"; 
+        const correctHashedPassword = "123"; 
 
-        // On hache ce que l'utilisateur a entré
+        // On hache ce que l'utilisateur a entrÃ©
         const hashedPassword = hashPassword(password);
 
         if (username === "Lappland" && hashedPassword === correctHashedPassword) {
-            console.log("Connexion réussie !");
+            console.log("Connexion rÃ©ussie !");
             window.location.href = "page4.html"; 
         } else {
-            console.log("Connexion échouée.");
+            console.log("Connexion Ã©chouÃ©e.");
             document.getElementById("error-message").textContent = "Nom d'utilisateur ou mot de passe incorrect.";
         }
     });
