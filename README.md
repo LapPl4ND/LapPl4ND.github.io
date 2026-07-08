@@ -10,7 +10,7 @@ My personal portfolio website where I showcase my projects, experiments and the 
 - 💻 Modern and responsive design
 - 🌸 Anime-inspired aesthetic
 - ⚡ Fast and lightweight
-- 📱 Mobile friendly
+- 📱 Mobile friendly (Soon)
 
 ---
 
