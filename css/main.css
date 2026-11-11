@@ -329,7 +329,8 @@ img { display: block; max-width: 100%; }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 500px));
+    justify-content: center;
     gap: 20px;
 }
 
@@ -569,3 +570,5 @@ img { display: block; max-width: 100%; }
 }
 
 .project-featured p { flex: 0 0 auto; }
+
+.project .project-links { margin-top: auto; }
