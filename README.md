@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
 
 # Nyssira
@@ -77,6 +76,3 @@ Aucune installation : ouvrir `index.html` dans un navigateur.
 <div align="center">
 <sub>Fait par Nyssira</sub>
 </div>
-=======
-
->>>>>>> 1ac9be7d64939b63c81c5b64f7b7dce5c956c4cc
