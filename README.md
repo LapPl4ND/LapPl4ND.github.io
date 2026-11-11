@@ -5,7 +5,7 @@
 **Designer · Dev · Réseau & Cyber**
 
 [![Site](https://img.shields.io/badge/Site-lappl4nd.github.io-ffb27a?style=for-the-badge)](https://lappl4nd.github.io)
-[![Discord](https://img.shields.io/badge/Discord-Rejoindre-ff8a3d?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/utq53uhmBE)
+[![Discord](https://img.shields.io/badge/Discord-Rejoindre-ff8a3d?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/DhWAsP8nQx)
 [![YouTube](https://img.shields.io/badge/YouTube-Chaîne-ff8a3d?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Ahegao_)
 
 <br>
