@@ -10,7 +10,6 @@
 
 <br>
 
-<img src="img/preview.jpg" alt="Aperçu du site" width="850">
 
 </div>
 
