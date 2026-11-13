@@ -329,7 +329,7 @@ img { display: block; max-width: 100%; }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 500px));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     justify-content: center;
     gap: 20px;
 }
